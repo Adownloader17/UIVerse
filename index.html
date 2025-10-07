@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UIVerse - Learn Frontend Development, AI Tools, and Modern Web Development Practices">
+    <meta name="keywords" content="frontend, web development, HTML, CSS, JavaScript, React, UI/UX, learning resources">
+    <meta name="author" content="UIVerse Team">
+    
+    <title>UIVerse - Modern Frontend Learning Hub</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/navigation.css">
+    <link rel="stylesheet" href="src/styles/components.css">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="hero-background">
+        <img src="assets/images/gradient.png" alt="Background gradient" loading="lazy">
+    </div>
+    <div class="hero-blur"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="#home" class="logo" aria-label="UIVerse Home">
+                    <span>UI</span><span style="color: var(--primary-color);">Verse</span>
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="nav-links" id="navMenu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                    
+                    <!-- Build Dropdown -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true">Build ▾</a>
+                        <div class="dropdown-content">
+                            <a href="src/components/index.html">Components</a>
+                            <a href="#playground">Playground</a>
+                            <a href="#templates">Templates</a>
+                        </div>
+                    </div>
+
+                    <!-- Learn Dropdown -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true">Learn ▾</a>
+                        <div class="dropdown-content">
+                            <a href="#practices">Practices</a>
+                            <a href="#roadmap">Roadmap</a>
+                            <a href="src/pages/portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+
+                    <!-- Community Dropdown -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true">Community ▾</a>
+                        <div class="dropdown-content">
+                            <a href="#about">About</a>
+                            <a href="#community">Community</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="nav-actions">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                    <button class="btn-signing" onclick="window.open('https://github.com/Adownloader17','_blank')" aria-label="Visit GitHub">
+                        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        GitHub
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="mobile-nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                    <a href="#practices" class="nav-link">Practices</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content" data-aos="fade-up">
+                <!-- Hero Tag -->
+                <div class="hero-tag">
+                    <span>TRY ▪ LEARN ▪ BUILD</span>
+                </div>
+
+                <!-- Hero Title -->
+                <h1 class="hero-title">
+                    Welcome to the Future of 
+                    <span style="color: var(--primary-color);">Frontend</span>
+                </h1>
+
+                <!-- Hero Description -->
+                <p class="hero-description">
+                    "Good design is invisible, great frontend makes it unforgettable."
+                    <br><br>
+                    Master modern web development with our comprehensive resources, 
+                    tools, and community-driven learning platform.
+                </p>
+
+                <!-- Hero Actions -->
+                <div class="hero-actions">
+                    <a href="src/pages/portfolio.html" class="btn btn-primary">
+                        Explore Portfolio
+                        <i class="fas fa-arrow-right ml-sm"></i>
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        Get Started
+                        <i class="fas fa-play ml-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3D Model Container -->
+            <div class="model-container">
+                <spline-viewer 
+                    url="https://prod.spline.design/aC6ctjzwpsQSjExT/scene.splinecode"
+                    loading="lazy"
+                    data-aos="fade-left"
+                    data-aos-delay="300">
+                </spline-viewer>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DISCOVER</span>
+                <h2 class="section-title">Our Journey</h2>
+                <p class="section-subtitle">
+                    Empowering developers to create amazing digital experiences
+                </p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="about-content" data-aos="fade-right">
+                    <h3>Crafting Digital Excellence</h3>
+                    <p>
+                        At UIVerse, we are passionate about bringing ideas to life through 
+                        the art of frontend development. Our mission is simple: bridge the gap 
+                        between imagination and implementation using the power of HTML, CSS, and JavaScript.
+                    </p>
+                    <p>
+                        Every guide, tool, and resource we share reflects our commitment to quality, 
+                        innovation, and user-focused design. We don't just teach code — we help you 
+                        create engaging, interactive experiences that captivate users and make an impact.
+                    </p>
+                </div>
+                
+                <div class="feature-grid" data-aos="fade-left">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4 class="feature-title">Code Mastery</h4>
+                        <p class="feature-description">
+                            Building clean, maintainable, and scalable frontend solutions.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="feature-title">Creative Design</h4>
+                        <p class="feature-description">
+                            Transforming ideas into visually stunning interfaces.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="feature-title">Community</h4>
+                        <p class="feature-description">
+                            Working together to achieve excellence in development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practices Section -->
+    <section id="practices" class="section practices-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">EXPLORE</span>
+                <h2 class="section-title">Practice Platforms</h2>
+                <p class="section-subtitle">
+                    Sharpen your frontend skills with these interactive resources
+                </p>
+            </div>
+            
+            <div class="practice-grid">
+                <!-- Practice Platform Cards -->
+                <div class="practice-card" data-aos="zoom-in" data-aos-delay="100" 
+                     onclick="window.open('https://www.freecodecamp.org/', '_blank')">
+                    <img src="https://imgs.search.brave.com/NRNDXbR_DXOpAI7vcRmM6V4_JzAdCZqSz342uZrC2_Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kcXkz/OGZud2g0ZnFzLmNs/b3VkZnJvbnQubmV0/L2NvbXBhbnkvQ09N/SFE3QjlSSktOR05Q/UkFIQkVPTkROQkpF/Nzg4L2xvZ28ud2Vi/cA" alt="freeCodeCamp">
+                    <h4>freeCodeCamp</h4>
+                    <p>Learn to code for free! Interactive tutorials and hands-on projects.</p>
+                </div>
+
+                <div class="practice-card" data-aos="zoom-in" data-aos-delay="200"
+                     onclick="window.open('https://www.frontendmentor.io/', '_blank')">
+                    <img src="https://imgs.search.brave.com/LCwRUXPWRaHllm03aB2rF_ZZ9SE4OyYidRBU3P4Sr9Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9taXJv/Lm1lZGl1bS5jb20v/djIvMSoxZUkxTVZ2/cTlJNEIza0dwdDJK/UXl3LnBuZw" alt="Frontend Mentor">
+                    <h4>Frontend Mentor</h4>
+                    <p>Design to code challenges. Turn professional designs into websites.</p>
+                </div>
+
+                <div class="practice-card" data-aos="zoom-in" data-aos-delay="300"
+                     onclick="window.open('https://cssbattle.dev/', '_blank')">
+                    <img src="https://cssbattle.dev/images/logo.svg" alt="CSS Battle">
+                    <h4>CSS Battle</h4>
+                    <p>Battle with CSS! Replicate targets with the shortest code possible.</p>
+                </div>
+
+                <div class="practice-card" data-aos="zoom-in" data-aos-delay="400"
+                     onclick="window.open('https://javascript30.com/', '_blank')">
+                    <img src="https://i.pinimg.com/736x/7b/56/8e/7b568e01183f783a02fa62c7691e3d84.jpg" alt="JavaScript 30">
+                    <h4>JavaScript 30</h4>
+                    <p>30 days of JS mastery. Hands-on projects in vanilla JavaScript.</p>
+                </div>
+
+                <div class="practice-card" data-aos="zoom-in" data-aos-delay="500"
+                     onclick="window.open('https://codepen.io/challenges/', '_blank')">
+                    <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="CodePen">
+                    <h4>CodePen</h4>
+                    <p>Your creative coding space. Build and showcase ideas instantly.</p>
+                </div>
+
+                <div class="practice-card" data-aos="zoom-in" data-aos-delay="600"
+                     onclick="window.open('https://www.codewars.com/', '_blank')">
+                    <img src="https://imgs.search.brave.com/Psu8_JlcaUaP9rCK7lv5VjN_gFnH9AakcK3FQfkkEvo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/Yi5zYWFzaHViLmNv/bS9pbWFnZXMvYXBw/L3NlcnZpY2VfbG9n/b3MvMTIvMWIxOTdh/MGE1MzZmL2xhcmdl/LnBuZz8xNTMxNjYy/MDA2" alt="Codewars">
+                    <h4>Codewars</h4>
+                    <p>Level up with coding challenges in a gamified platform.</p>
+                </div>
+            </div>
+
+            <!-- YouTubers Section -->
+            <div class="section-header mt-2xl">
+                <span class="section-tag">FOLLOW</span>
+                <h2 class="section-title">Frontend YouTubers</h2>
+                <p class="section-subtitle">
+                    Learn from the best creators in Hindi & English
+                </p>
+            </div>
+
+            <div class="youtuber-grid">
+                <!-- YouTuber Cards -->
+                <div class="youtuber-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="youtuber-avatar">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_kX3sdbuu3KFmRPsmlu0R5Rx_BhpxwupjtvJmkEdNfla7w=s160-c-k-c0x00ffffff-no-rj" alt="CodeWithHarry">
+                    </div>
+                    <h4>CodeWithHarry <span class="lang-badge">Hindi</span></h4>
+                    <p>Easy web dev tutorials & projects (HTML, CSS, JS)</p>
+                    <a href="https://www.youtube.com/@CodeWithHarry" target="_blank" class="yt-btn">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+
+                <div class="youtuber-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="youtuber-avatar">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_mLysKc36lc_FVk2j777olWvLOjgDz6NCNGdiQBnAKRENM=s160-c-k-c0x00ffffff-no-rj" alt="Traversy Media">
+                    </div>
+                    <h4>Traversy Media <span class="lang-badge">English</span></h4>
+                    <p>Industry-standard HTML, CSS, JS & project builds</p>
+                    <a href="https://www.youtube.com/@TraversyMedia" target="_blank" class="yt-btn">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+
+                <div class="youtuber-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="youtuber-avatar">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_mQczyuvnXgEq8fApoOXpG2Yw_JKYqRA7kVOhNFuHLz9Vc=s160-c-k-c0x00ffffff-no-rj" alt="Kevin Powell">
+                    </div>
+                    <h4>Kevin Powell <span class="lang-badge">English</span></h4>
+                    <p>CSS guru with modern styling techniques</p>
+                    <a href="https://www.youtube.com/@KevinPowell" target="_blank" class="yt-btn">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+
+                <div class="youtuber-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="youtuber-avatar">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_mk2Ex-8sW03SBlBX7D1EC5skH0kv9rS3rU9IXq2I-q2Zg=s160-c-k-c0x00ffffff-no-rj" alt="The Net Ninja">
+                    </div>
+                    <h4>The Net Ninja <span class="lang-badge">English</span></h4>
+                    <p>Full frontend playlists, from basics to advanced</p>
+                    <a href="https://www.youtube.com/@NetNinja" target="_blank" class="yt-btn">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section resources-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">RESOURCES</span>
+                <h2 class="section-title">Essential Tools</h2>
+                <p class="section-subtitle">
+                    Curated tools to boost your productivity and creativity
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Frontend Tools Card -->
+                <div class="card" data-aos="fade-right">
+                    <div class="card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="card-title">Frontend Tools</h3>
+                    </div>
+                    <ul class="resource-list">
+                        <li>
+                            <strong>CodePen</strong> - Online playground for HTML, CSS, JS
+                            <a href="https://codepen.io" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                        <li>
+                            <strong>Figma</strong> - UI/UX design tool for mockups
+                            <a href="https://figma.com" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                        <li>
+                            <strong>CSS Gradient</strong> - Beautiful gradient backgrounds
+                            <a href="https://cssgradient.io" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                        <li>
+                            <strong>Font Awesome</strong> - Icon library for projects
+                            <a href="https://fontawesome.com" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- AI Tools Card -->
+                <div class="card" data-aos="fade-left">
+                    <div class="card-header">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="card-title">AI Development Tools</h3>
+                    </div>
+                    <ul class="resource-list">
+                        <li>
+                            <strong>ChatGPT</strong> - AI assistant for code generation
+                            <a href="https://chat.openai.com" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                        <li>
+                            <strong>GitHub Copilot</strong> - AI pair programmer
+                            <a href="https://github.com/features/copilot" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                        <li>
+                            <strong>Cursor</strong> - AI-powered code editor
+                            <a href="https://cursor.so" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                        <li>
+                            <strong>Codeium</strong> - Free AI coding assistant
+                            <a href="https://codeium.com" target="_blank" class="resource-link">🔗</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">
+                    Have a question, suggestion, or collaboration idea? Reach out!
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <small class="error" aria-live="polite"></small>
+                </div>
+                <button type="submit" class="contact-btn">Send Message</button>
+                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-text">© <span id="year">2025</span> UIVerse. All rights reserved.</span>
+                <div class="footer-socials">
+                    <a href="mailto:contact@uiverse.dev" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com/uiverse" target="_blank" title="Twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/Adownloader17" target="_blank" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.44/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>

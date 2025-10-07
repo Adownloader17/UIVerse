@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UIVerse - Learn Frontend Development, AI Tools, and Modern Web Development Practices">
+    <meta name="keywords" content="frontend, web development, HTML, CSS, JavaScript, React, UI/UX, learning resources">
+    <meta name="author" content="UIVerse Team">
+    
+    <title>UIVerse - Modern Frontend Learning Hub</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="../assets/images/logo.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="../src/styles/navigation.css">
+    <link rel="stylesheet" href="../src/styles/components.css">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="../index.html" class="logo" aria-label="UIVerse Home">
+                    <span>UI</span><span style="color: var(--primary-color);">Verse</span>
+                </a>
+
+                <!-- Navigation Menu -->
+                <div class="nav-links">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#about" class="nav-link">About</a>
+                    <a href="../index.html#resources" class="nav-link">Resources</a>
+                    <a href="../src/components/index.html" class="nav-link">Components</a>
+                    <a href="#" class="nav-link active">Portfolio</a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="nav-actions">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="section hero-section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        Hi, I'm <span style="color: var(--primary-color);">Ankita Harihar</span>
+                    </h1>
+                    <p class="hero-description">
+                        I'm a <strong>Full-Stack Developer</strong> who loves building clean UIs and solving real problems with code.
+                        <br><br>
+                        I am passionate about learning by building. I regularly explore modern software development workflows and follow roadmap-based learning to stay on track.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="footer-socials mt-xl">
+                        <a href="https://github.com/Adownloader17" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/ankita-harihar-79180127b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-photo" data-aos="fade-left">
+                    <img src="../assets/images/Anni.jpeg" alt="Ankita Harihar profile picture" class="profile-image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid grid-2">
+                <div class="about-content" data-aos="fade-right">
+                    <p>
+                        I'm a passionate developer with experience in HTML, CSS, JavaScript, React, Node.js,
+                        and MongoDB. I love creating delightful user experiences and performant web apps.
+                    </p>
+                    <p>
+                        Currently a <strong>3rd-year Computer Science student</strong>, actively learning CI/CD, C#, and building personal projects.
+                    </p>
+                </div>
+                <div class="skills" data-aos="fade-left">
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML / CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="card project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://i.pinimg.com/1200x/22/a5/7a/22a57a81e10180e3010155e36b7afbaa.jpg" alt="Online Car Showroom project" class="project-image" />
+                    <div class="card-content">
+                        <h3 class="card-title">Online Car Showroom</h3>
+                        <p class="card-description">
+                            A full-stack web app for browsing, filtering, and booking cars. Built with React, Node.js, and MongoDB.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Live Demo</a>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="card project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="../assets/images/quiz.jpeg" alt="Quiz App project" class="project-image" />
+                    <div class="card-content">
+                        <h3 class="card-title">Quiz App</h3>
+                        <p class="card-description">
+                            Timed quiz application with scoreboard, built using HTML, CSS, and JavaScript.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Live Demo</a>
+                            <a href="https://github.com/VitthalSutar/Quizzo_The-McQ" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="card project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://via.placeholder.com/600x400.png?text=Recipe+Finder" alt="Reverse Recipe Finder project" class="project-image" />
+                    <div class="card-content">
+                        <h3 class="card-title">Reverse Recipe Finder</h3>
+                        <p class="card-description">
+                            Enter ingredients, get recipe ideas instantly. Built with Flask and vanilla JS.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Live Demo</a>
+                            <a href="#" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-actions text-center mb-xl" data-aos="fade-up">
+                <a href="../assets/resume/AnkitaHarihar-Resume.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download mr-sm"></i>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="timeline" data-aos="fade-up">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science</h3>
+                        <span class="timeline-date">2022 – Present</span>
+                        <p>Dr. Babasaheb Ambedkar Technological University, Lonere</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Full-Stack Developer Intern</h3>
+                        <span class="timeline-date">Jun 2024 – Aug 2024</span>
+                        <p>Worked on building REST APIs, React dashboards, and CI/CD pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required />
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                        <small class="error" aria-live="polite"></small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                    <small class="error" aria-live="polite"></small>
+                </div>
+                <button type="submit" class="contact-btn">Send Message</button>
+                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-text">© <span id="year">2025</span> Ankita Harihar. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../src/scripts/main.js"></script>
+
+    <!-- Additional Styles for Portfolio -->
+    <style>
+        .profile-image {
+            border-radius: 50%;
+            box-shadow: var(--shadow-dark);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .skills-grid {
+            display: grid;
+            gap: var(--space-md);
+        }
+
+        .skill-item {
+            display: grid;
+            grid-template-columns: 120px 1fr 60px;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .skill-name {
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-sm);
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: var(--border-color);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-full);
+            transition: width 1s ease-out;
+        }
+
+        .skill-percentage {
+            font-size: var(--font-size-xs);
+            color: var(--text-muted);
+            text-align: right;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .project-image {
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-content {
+            padding: var(--space-lg);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .project-links {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: auto;
+        }
+
+        .tags {
+            display: flex;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: var(--border-color);
+            color: var(--text-muted);
+            font-size: var(--font-size-xs);
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: var(--space-xl);
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--space-xl);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -29px;
+            top: 8px;
+            width: 16px;
+            height: 16px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--background-dark);
+        }
+
+        .timeline-content h3 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-sm);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-sm);
+        }
+
+        .timeline-content p {
+            color: var(--text-muted);
+            margin-top: var(--space-sm);
+        }
+
+        .btn-sm {
+            padding: var(--space-xs) var(--space-md);
+            font-size: var(--font-size-sm);
+        }
+
+        .mr-sm { margin-right: var(--space-sm); }
+        .ml-sm { margin-left: var(--space-sm); }
+
+        @media (max-width: 768px) {
+            .skill-item {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-image {
+                max-width: 200px;
+            }
+        }
+    </style>
+</body>
+</html>

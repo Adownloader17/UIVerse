@@ -1,0 +1,66 @@
+{
+  "name": "uiverse",
+  "version": "1.0.0",
+  "description": "UIVerse - Modern Frontend Learning Hub with components, resources, and tools",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=3000",
+    "build": "echo 'Static site - no build process needed'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'Linting not configured'"
+  },
+  "keywords": [
+    "frontend",
+    "web-development",
+    "html",
+    "css",
+    "javascript",
+    "ui-components",
+    "learning-platform",
+    "responsive-design",
+    "modern-web"
+  ],
+  "author": {
+    "name": "Ankita Harihar",
+    "email": "contact@uiverse.dev",
+    "url": "https://github.com/Adownloader17"
+  },
+  "contributors": [
+    {
+      "name": "UIVerse Community",
+      "url": "https://github.com/Adownloader17/UIVerse/contributors"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adownloader17/UIVerse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adownloader17/UIVerse/issues"
+  },
+  "homepage": "https://github.com/Adownloader17/UIVerse#readme",
+  "directories": {
+    "src": "Source code directory",
+    "assets": "Static assets (images, fonts, etc.)",
+    "docs": "Documentation"
+  },
+  "files": [
+    "src/**/*",
+    "assets/**/*",
+    "docs/**/*",
+    "index.html",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions"
+  ]
+}

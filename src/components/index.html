@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UIVerse Components - The largest library of open-source UI components">
+    <title>UIVerse Components - Open-Source UI Library</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <!-- Logo -->
+                <a href="../../index.html" class="logo" aria-label="UIVerse Home">
+                    <span>UI</span><span style="color: var(--primary-color);">Verse</span>
+                </a>
+
+                <!-- Navigation Menu -->
+                <div class="nav-links">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                    <a href="../../index.html#about" class="nav-link">About</a>
+                    <a href="../../index.html#resources" class="nav-link">Resources</a>
+                    <a href="#" class="nav-link active">Components</a>
+                    <a href="../pages/portfolio.html" class="nav-link">Portfolio</a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="nav-actions">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                    <button class="btn btn-primary btn-sm">+ Create</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">
+                    The Largest Library of 
+                    <span style="color: var(--primary-color);">Open-Source UI</span>
+                </h1>
+                <p class="hero-description">
+                    Community-built library of UI elements.<br>
+                    Copy as HTML/CSS, Tailwind, React and Figma.
+                </p>
+                
+                <!-- Search Bar -->
+                <form class="search-form" data-aos="fade-up" data-aos-delay="300">
+                    <div class="search-input-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input 
+                            type="text" 
+                            placeholder="Search for components, styles, creators..." 
+                            class="search-input"
+                            id="componentSearch"
+                        >
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section categories-section">
+        <div class="container">
+            <h2 class="section-title">Popular Categories</h2>
+            
+            <div class="categories-grid">
+                <!-- Category Cards -->
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3>Primary Button</h3>
+                    <p>Modern button designs and interactions</p>
+                    <span class="component-count">150+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Explore</h3>
+                    <p>Navigation and exploration components</p>
+                    <span class="component-count">85+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Realism</h3>
+                    <p>Realistic UI elements and skeuomorphism</p>
+                    <span class="component-count">120+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Glassmorphism</h3>
+                    <p>Glass-like translucent designs</p>
+                    <span class="component-count">95+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Gradient</h3>
+                    <p>Beautiful gradient-based components</p>
+                    <span class="component-count">200+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="category-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <h3>Navigation</h3>
+                    <p>Sticky navbars and menu systems</p>
+                    <span class="component-count">75+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="category-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Profile Card</h3>
+                    <p>User profile and card components</p>
+                    <span class="component-count">110+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="category-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <h3>Login Form</h3>
+                    <p>Authentication and form components</p>
+                    <span class="component-count">90+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="category-icon">
+                        <i class="fas fa-window-restore"></i>
+                    </div>
+                    <h3>Popup Modal</h3>
+                    <p>Modal dialogs and overlays</p>
+                    <span class="component-count">65+ components</span>
+                </div>
+
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="category-icon">
+                        <i class="fas fa-align-center"></i>
+                    </div>
+                    <h3>Footer</h3>
+                    <p>Simple and complex footer designs</p>
+                    <span class="component-count">50+ components</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Components Section -->
+    <section class="section featured-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FEATURED</span>
+                <h2 class="section-title">Trending Components</h2>
+                <p class="section-subtitle">
+                    Most popular components this week
+                </p>
+            </div>
+
+            <div class="components-grid">
+                <!-- Component Preview Cards -->
+                <div class="component-preview-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="component-preview">
+                        <!-- Live Button Preview -->
+                        <div class="preview-container">
+                            <button class="preview-button gradient-button">
+                                <span>Download Now</span>
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="component-info">
+                        <h3>Gradient Download Button</h3>
+                        <p>Modern gradient button with icon</p>
+                        <div class="component-stats">
+                            <span class="likes"><i class="fas fa-heart"></i> 1.2k</span>
+                            <span class="downloads"><i class="fas fa-download"></i> 542</span>
+                        </div>
+                        <div class="component-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Button</span>
+                            <span class="tag">Gradient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-preview-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="component-preview">
+                        <div class="preview-container">
+                            <div class="preview-card glass-card">
+                                <div class="card-avatar"></div>
+                                <h4>John Doe</h4>
+                                <p>Frontend Developer</p>
+                                <button class="card-button">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-info">
+                        <h3>Glassmorphism Profile Card</h3>
+                        <p>Elegant glass-effect profile card</p>
+                        <div class="component-stats">
+                            <span class="likes"><i class="fas fa-heart"></i> 892</span>
+                            <span class="downloads"><i class="fas fa-download"></i> 326</span>
+                        </div>
+                        <div class="component-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Glass</span>
+                            <span class="tag">Card</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-preview-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="component-preview">
+                        <div class="preview-container">
+                            <div class="loading-spinner">
+                                <div class="spinner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-info">
+                        <h3>Modern Loading Spinner</h3>
+                        <p>Smooth CSS-only loading animation</p>
+                        <div class="component-stats">
+                            <span class="likes"><i class="fas fa-heart"></i> 756</span>
+                            <span class="downloads"><i class="fas fa-download"></i> 298</span>
+                        </div>
+                        <div class="component-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Animation</span>
+                            <span class="tag">Loading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content text-center" data-aos="fade-up">
+                <h2>Ready to Build Something Amazing?</h2>
+                <p>Join our community and start creating beautiful UI components today.</p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-lg">
+                        <i class="fas fa-plus mr-sm"></i>
+                        Create Component
+                    </button>
+                    <a href="../../index.html" class="btn btn-outline btn-lg">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-text">© 2025 UIVerse. All rights reserved.</span>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../scripts/main.js"></script>
+
+    <!-- Component-specific styles -->
+    <style>
+        /* Search Form Styles */
+        .search-form {
+            max-width: 600px;
+            margin: var(--space-2xl) auto 0;
+        }
+
+        .search-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-full);
+            padding: var(--space-sm);
+            backdrop-filter: blur(10px);
+        }
+
+        .search-icon {
+            color: var(--text-muted);
+            margin: 0 var(--space-md);
+        }
+
+        .search-input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text-light);
+            font-size: var(--font-size-base);
+            padding: var(--space-sm) 0;
+        }
+
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .search-button {
+            background: var(--gradient-primary);
+            border: none;
+            border-radius: var(--radius-full);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: transform var(--transition-fast);
+        }
+
+        .search-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Categories Grid */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .category-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            backdrop-filter: blur(10px);
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-color);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+        }
+
+        .category-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-lg);
+            font-size: var(--font-size-2xl);
+            color: var(--text-light);
+        }
+
+        .category-card h3 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-sm);
+        }
+
+        .category-card p {
+            color: var(--text-muted);
+            margin-bottom: var(--space-md);
+        }
+
+        .component-count {
+            display: inline-block;
+            background: var(--border-color);
+            color: var(--primary-color);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+        }
+
+        /* Components Grid */
+        .components-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .component-preview-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+
+        .component-preview-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .component-preview {
+            height: 200px;
+            background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .preview-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Component Previews */
+        .preview-button.gradient-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--radius-lg);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            transition: transform var(--transition-base);
+        }
+
+        .preview-button.gradient-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .preview-card.glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            width: 200px;
+        }
+
+        .card-avatar {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            margin: 0 auto var(--space-md);
+        }
+
+        .glass-card h4 {
+            margin-bottom: var(--space-sm);
+            color: var(--text-light);
+        }
+
+        .glass-card p {
+            color: var(--text-muted);
+            margin-bottom: var(--space-lg);
+            font-size: var(--font-size-sm);
+        }
+
+        .card-button {
+            background: var(--primary-color);
+            color: var(--text-light);
+            border: none;
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+        }
+
+        .loading-spinner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Component Info */
+        .component-info {
+            padding: var(--space-lg);
+        }
+
+        .component-info h3 {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-sm);
+        }
+
+        .component-info p {
+            color: var(--text-muted);
+            margin-bottom: var(--space-md);
+        }
+
+        .component-stats {
+            display: flex;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-md);
+        }
+
+        .component-stats span {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: var(--font-size-sm);
+            color: var(--text-muted);
+        }
+
+        .component-tags {
+            display: flex;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            border-radius: var(--radius-xl);
+            margin: var(--space-2xl) 0;
+        }
+
+        .cta-content h2 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--space-md);
+        }
+
+        .cta-content p {
+            color: var(--text-muted);
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        .cta-actions {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-lg {
+            padding: var(--space-md) var(--space-2xl);
+            font-size: var(--font-size-lg);
+        }
+
+        @media (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .components-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</body>
+</html>
